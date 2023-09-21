@@ -3,26 +3,35 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 const Container = () => {
       return (
         <View style={styles.container}>
-          <Text>Permissions</Text>
-          <Image source={require('../assets/lock.png')} style={styles.icon}/>
+          <Text style={styles.textstyle}>Permissions</Text>
           <StatusBar style="auto" />
+          <Image source={require('../assets/lock.png')} style={styles.icon}/>
         </View>
-      );
+              );
      
 } 
 
 
 const styles = StyleSheet.create({
   container: {flex: 1,
-  backgroundColor: '#00AFDB',
+  position: 'relative',
   alignItems: 'center',
   justifyContent: 'center',
-  fontSize: 20,
+  backgroundColor: '#00AFDB',
+  
   },
   icon: {
-    width:484,
-    height:484,
-    },
+    width:'80%',
+    height: '40%',
+    display: 'flex',
+  },
+  textstyle: {
+    fontSize: 50, 
+    fontFamily: 'AppleSDGothicNeo-Bold',
+    color: 'lime',
+    textAlign: 'auto', 
+  },
+    
 });
 
 export default Container
