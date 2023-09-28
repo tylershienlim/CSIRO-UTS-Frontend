@@ -1,0 +1,6 @@
+conatiner {
+    flex: 1;
+    background-color: '#00AFDB';
+    align-items: 'center';
+    justify-content: 'center';
+  }
