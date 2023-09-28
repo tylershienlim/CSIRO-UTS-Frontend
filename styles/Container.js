@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
   },
   textstyle: {
     fontSize: 50, 
-    fontFamily: 'AppleSDGothicNeo-Bold',
-    color: 'lime',
+    fontFamily: 'Calibri',
+    color: '#fff',
     textAlign: 'auto', 
   },
     
