@@ -22,16 +22,17 @@ const styles = StyleSheet.create({
   },
   icon: {
     width:'80%',
-    height: '40%',
+    height: '50%',
     display: 'flex',
   },
   textstyle: {
+    paddingBottom: 50,
     fontSize: 50, 
-    fontFamily: 'Calibri',
+    fontFamily: 'Arial',
     color: '#fff',
     textAlign: 'auto', 
   },
     
 });
 
-export default Container
+export default Container;
