@@ -7,7 +7,8 @@ export default class Header extends React.Component {
         return (
            
             <View style = {styles.header}>
-                <Text>Header component</Text>
+                <Text style={styles.textstyle}>Overview</Text>
+                <View style = {styles.line}></View>
             </View>
             
         );
@@ -16,13 +17,29 @@ export default class Header extends React.Component {
 
 const styles = StyleSheet.create ({
     header: {
+        flex: 1,
         width: '100%',
         height: '15%',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#eee',
+        alignItems: 'left',
+        justifyContent: 'left',
+        paddingBot: 20,
+    },
+
+    line: {
+        width: '100%',
+        height: '2%',
+        backgroundColor: "#808080",
+
     },
     
+    textstyle: {
+        paddingTop: 50,
+        paddingLeft: 20,
+        fontSize: 40, 
+        
+        
+      },
+
 });
 
 
