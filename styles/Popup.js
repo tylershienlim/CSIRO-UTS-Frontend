@@ -1,5 +1,5 @@
 import React from 'react'
-import { SafeAreaView,StyleSheet,Text,TouchableWithoutFeedback, Button} from 'react-native'
+import { SafeAreaView,StyleSheet,Text, Button} from 'react-native'
 
 
 const Popup = () => {
@@ -17,7 +17,7 @@ const Popup = () => {
       </Text>
       
 
-         <Button title="Enable"  onPress={() => alert('Please continue')}/>
+         <Button title="Enable" onPress={() => alert('Please continue')}/>
          
            
          
@@ -28,7 +28,7 @@ const Popup = () => {
 
 const styles = StyleSheet.create({
   txt:{
-    fontSize: 22,
+    fontSize: 20,
     backgroundColor: '#fff',
     color: 'black',
     textAlign: 'center',
@@ -36,9 +36,10 @@ const styles = StyleSheet.create({
   },
 
   txt1: {
+    padding: 15,
     fontSize: 18,
     backgroundColor:'#fff',
-    color: 'black',
+    color: 'gray',
     textAlign: 'center',
     fontFamily: 'Arial',
   }
