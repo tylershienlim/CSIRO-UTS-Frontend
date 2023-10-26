@@ -32,17 +32,19 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native';
                      <Text style = {styles.textstyle}>Security Status</Text>
 
                      <Image source={require('../assets/icon.png')} style={styles.icon}/>
+                     <View style = {styles.line}></View>
+                     <Text style= {styles.textstyle1}>12 attack attempts detected</Text>
                 </View>
             </View>
 
             <View style={styles.box3}>
                     <View style={styles.inner3}>
-                     <Text style = {styles.textstyle}>Detected 
+                     <Text style = {styles.textstyle2}>Detected 
                      {"\n"}Messages</Text>
                      <View style = {styles.line}></View>
                      <Text style = {styles.number}>12</Text>
                      
-                 <Text style = {styles.textstyle}>Messages to review</Text>
+                 <Text style = {styles.textstyle2}>Messages to review</Text>
 
                 </View>
             </View>
@@ -70,8 +72,6 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native';
                      <Text style = {styles.textstyle}>Threat Overview</Text>
                 </View>
             </View>
-
-         
 
         </View>
 
@@ -217,14 +217,28 @@ const styles = StyleSheet.create ({
         
     },
 
-    textstyle4: {
-        fontSize: 15, 
+    textstyle1: {
+        fontSize: 15,
         alignItems: 'center',
+        paddingTop: 20,
+    },
+
+    textstyle2: {
+        fontSize: 20,
+        alignItems: 'center',
+        paddingBottom: 20,
+    },
+
+    textstyle4: {
+        fontSize: 16, 
+        alignItems: 'center',
+        paddingTop: 25,
     },
 
     textstyle5: {
-        fontSize: 15, 
+        fontSize: 16, 
         alignItems: 'center',
+        paddingTop: 25,
     },
 
 });
