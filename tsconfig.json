@@ -1,5 +1,13 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
-    "jsx": "react"}
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+  },
+    
+    "resolve": {
+      "extensions": [".js", ".json", ".ts", ".tsx"],
+    },
 }
